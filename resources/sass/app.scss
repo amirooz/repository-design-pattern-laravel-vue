@@ -1,0 +1,82 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+//Ubuntu font load from local
+$ubuntu-font-path: "../fonts/ubuntu";
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKcg72j00.woff2');
+    src: local("Ubuntu Regular"), local("Ubuntu-Regular"), 
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKcg72j00.woff2') format("woff2"), 
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKcQ72j00.woff2') format("woff2"), 
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKcw72j00.woff2') format("woff"), 
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKew72j00.woff2') format("woff"),  
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKfA72j00.woff2') format("woff"),  
+        url('#{$ubuntu-font-path}/4iCs6KVjbNBYlgoKfw72.woff2') format("woff");
+}
+
+
+// Variables
+@import 'variables';
+$fa-font-path: '../webfonts';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+.router-link-exact-active {
+    background-color: #007bff !important;
+    color: #ffffff !important;
+}
+
+.has-treeview .router-link-exact-active {
+    background-color: #f1f1f1 !important;
+    color: #000 !important;
+}
+
+span.required {
+    color: red;
+    padding-right: 5px;
+}
+
+.login-logo img {
+    width: 70%;
+}
+
+.bigData thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #3490dc;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.bigData tbody td {
+    padding: 0.1rem 0.75rem;
+    padding-bottom: 0;
+}
+
+.bigData tbody td.img {
+    background-color: #ffffff;
+}
+
+.content-overflow {
+    max-height: 420px;
+    overflow-y: scroll;
+}
+
+.not-found svg {
+    width: 100%;
+    height: auto;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
